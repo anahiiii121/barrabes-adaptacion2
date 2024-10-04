@@ -1,0 +1,75 @@
+/* Estilos existentes */
+#foto1 {
+    width: 1550px; /* Estilo original */
+    height: 800px; /* Estilo original */
+}
+
+#barra {
+    background-color: #FFCE00;
+    padding: 8px;
+}
+
+#barra2 {
+    background-color: #FFCE00;
+    padding: 31px;
+}
+
+#barra3 {
+    background-color: #FFCE00;
+    padding: 29px;
+}
+
+/* Estilos para pantallas pequeñas (tabletas y móviles) */
+@media (max-width: 768px) {
+    #foto1 {
+        width: 100%; /* Imagen ocupa el 100% del ancho */
+        height: auto; /* Mantiene la relación de aspecto */
+    }
+
+    #barra, #barra2, #barra3 {
+        padding: 10px; /* Ajusta el padding para pantallas más pequeñas */
+    }
+
+    .form-control {
+        width: 100%; /* El input ocupa el 100% del ancho */
+        margin-bottom: 10px; /* Añade margen inferior */
+    }
+
+    .navbar {
+        flex-direction: column; /* Cambia a columna */
+        align-items: center; /* Centra el contenido */
+    }
+
+    .navbar .navbar-brand {
+        margin: 5px 0; /* Espacio entre los enlaces */
+        text-align: center; /* Centra el texto */
+        width: 100%; /* Hace que los enlaces ocupen el ancho completo */
+    }
+}
+
+/* Estilos para pantallas muy pequeñas (teléfonos móviles) */
+@media (max-width: 480px) {
+    #foto1 {
+        width: 100%; /* La imagen ocupa el 100% del ancho */
+        height: auto; /* Mantiene la relación de aspecto */
+    }
+
+    #barra, #barra2, #barra3 {
+        padding: 5px; /* Reduce el padding para pantallas muy pequeñas */
+    }
+
+    .form-control {
+        font-size: 14px; /* Reduce el tamaño de fuente para el input */
+    }
+
+    .navbar .nav-link {
+        font-size: 16px; /* Ajusta el tamaño de fuente para los enlaces */
+        text-align: center; /* Centra los enlaces */
+        width: 100%; /* Hace que los enlaces ocupen el ancho completo */
+    }
+
+    /* Oculta los logos en pantallas muy pequeñas si es necesario */
+    .navbar-brand img {
+        display: none; /* Oculta imágenes de los logos */
+    }
+}
